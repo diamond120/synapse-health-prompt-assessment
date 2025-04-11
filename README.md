@@ -34,7 +34,7 @@ A tool for extracting structured data from clinical notes using LLMs.
 2. Create a virtual environment:
    ```
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
    ```
 
 3. Install dependencies:
@@ -84,3 +84,17 @@ For best results:
 - Keep the system prompt focused on the extraction task
 - Be explicit about the desired output format in the user prompt
 - Adjust temperature based on how creative you want the model to be (lower for more deterministic outputs)
+
+## Future Improvements
+
+With more time, I would add:
+
+1. **Prompt/Output History**: Save previous runs for comparison
+2. **Export Functionality**: Allow users to download JSON outputs
+3. **Prompt Quality Rating**: Use the LLM to evaluate and suggest improvements to prompts
+4. **Side-by-Side Comparison**: Compare outputs from different prompt versions
+5. **Error Handling**: More robust error handling and validation
+6. **Authentication**: Secure API endpoints
+7. **Caching**: Implement response caching for repeated prompts
+8. **Custom Templates**: Allow users to save and load prompt templates
+9. **Batch Processing**: Process multiple clinical notes at once
